@@ -6,7 +6,7 @@ In the project directory, you can run:
 
 2. ### `npm start`
 
-Link demo:  [Demo](https://tienshake.github.io/free-to-game/)./
+Link demo:  [https://tienshake.github.io/free-to-game/](https://tienshake.github.io/free-to-game/)
 
 
 
