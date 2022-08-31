@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-app/static/css/main.253f703f.css",
-    "main.js": "/react-app/static/js/main.be7b654b.js",
-    "static/media/IconVi.svg": "/react-app/static/media/IconVi.cced293599633fdeb290ad949b227b2f.svg",
-    "static/media/IconSave.svg": "/react-app/static/media/IconSave.15b10c7a8bddf576a966dbc981db3686.svg",
-    "static/media/IconEn.svg": "/react-app/static/media/IconEn.783291e70d06d5b11741ca310d3d3f5b.svg",
-    "static/media/IconWindow.svg": "/react-app/static/media/IconWindow.5a1bfc26efdb08580b045671ca6973c7.svg",
-    "index.html": "/react-app/index.html",
-    "static/media/IconCheckSquare.svg": "/react-app/static/media/IconCheckSquare.d3632c6616bf762ec4b7605fe9666cd0.svg",
-    "main.253f703f.css.map": "/react-app/static/css/main.253f703f.css.map",
-    "main.be7b654b.js.map": "/react-app/static/js/main.be7b654b.js.map"
+    "main.css": "/free-to-game/static/css/main.253f703f.css",
+    "main.js": "/free-to-game/static/js/main.8777cfaf.js",
+    "static/media/IconVi.svg": "/free-to-game/static/media/IconVi.cced293599633fdeb290ad949b227b2f.svg",
+    "static/media/IconSave.svg": "/free-to-game/static/media/IconSave.15b10c7a8bddf576a966dbc981db3686.svg",
+    "static/media/IconEn.svg": "/free-to-game/static/media/IconEn.783291e70d06d5b11741ca310d3d3f5b.svg",
+    "static/media/IconWindow.svg": "/free-to-game/static/media/IconWindow.5a1bfc26efdb08580b045671ca6973c7.svg",
+    "index.html": "/free-to-game/index.html",
+    "static/media/IconCheckSquare.svg": "/free-to-game/static/media/IconCheckSquare.d3632c6616bf762ec4b7605fe9666cd0.svg",
+    "main.253f703f.css.map": "/free-to-game/static/css/main.253f703f.css.map",
+    "main.8777cfaf.js.map": "/free-to-game/static/js/main.8777cfaf.js.map"
   },
   "entrypoints": [
     "static/css/main.253f703f.css",
-    "static/js/main.be7b654b.js"
+    "static/js/main.8777cfaf.js"
   ]
 }
