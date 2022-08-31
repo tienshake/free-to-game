@@ -7,5 +7,14 @@ export const NotFoundContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   font-size: 50px;
+`;
+
+export const A = styled.a`
+  color: blue !important;
+  font-size: 20px;
+  &:hover {
+    text-decoration: underline !important;
+  }
 `;
