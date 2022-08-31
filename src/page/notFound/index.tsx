@@ -10,7 +10,7 @@ const NotFound = () => {
   return (
     <NotFoundContainer>
       {translate('not-found-page', language)}
-      <A style={{ color: 'blue !important' }} href="/">
+      <A style={{ color: 'blue !important' }} href="/free-to-game">
         Click return Home page
       </A>
     </NotFoundContainer>

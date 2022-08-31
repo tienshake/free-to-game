@@ -90,7 +90,7 @@ const Detail = () => {
           separator={<NavigateNextIcon fontSize="small" />}
           aria-label="breadcrumb"
         >
-          <Link color="inherit" to="/">
+          <Link color="inherit" to="/free-to-game">
             {translate('home', language)}
           </Link>
           <Link to="/games">{translate('free-games', language)} </Link>

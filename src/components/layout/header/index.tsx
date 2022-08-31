@@ -91,7 +91,7 @@ const Header = () => {
     <HeaderContainer>
       <HeaderContent>
         <Left>
-          <LinkStyled onClick={handleClickLogo} to="/">
+          <LinkStyled onClick={handleClickLogo} to="/free-to-game">
             <Img src={IMG_LOGO} />
           </LinkStyled>
           {headers?.map((item: headerType, index: number) => {
