@@ -10,6 +10,7 @@ const NotFound = () => {
   return (
     <NotFoundContainer>
       {translate('not-found-page', language)}
+      <a href="/">Link Home page</a>
     </NotFoundContainer>
   );
 };
