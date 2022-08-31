@@ -1,4 +1,4 @@
-import { EN, VI } from 'constants/constants.d';
+import { EN, VI } from 'constants/constants';
 import { PayloadType } from 'types';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { LanguageState } from 'types';

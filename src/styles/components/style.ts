@@ -12,6 +12,9 @@ export const H3 = styled.h3`
   font-size: 20px;
   margin: 0;
   font-weight: 500;
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
 `;
 
 export const Link = styled(LinkStyle)`

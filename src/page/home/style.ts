@@ -10,17 +10,13 @@ export const Container = styled(ContainerStyle)`
   margin-bottom: 50px;
   @media (max-width: ${breakpoints.desktop}) {
     width: auto;
-    padding: 0 20px;
+    padding: 0 50px;
   }
-  @media (max-width: 1200px) {
-    width: auto;
-    padding: 0 100px;
-  }
-  @media (max-width: 980px) {
-    padding: 0 110px;
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 0 50px;
     width: auto;
   }
-  @media (max-width: 918px) {
+  @media (max-width: 450px) {
     padding: 0 20px;
     width: auto;
   }
@@ -31,6 +27,9 @@ export const ContentGame = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 50px;
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+  }
 `;
 
 export const ContentLeft = styled.div`
@@ -39,4 +38,10 @@ export const ContentLeft = styled.div`
 
 export const ContentRight = styled.div`
   flex: 1;
+  @media (max-width: ${breakpoints.mobile}) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 `;

@@ -18,16 +18,16 @@ export const CardGameContainer = styled.div`
     transform: scale(1.02);
   }
   @media (max-width: ${breakpoints.desktop}) {
-    width: ${({ size }: ItemProps) => (size === 'minium' ? '100%' : '296px')};
+    width: ${({ size }: ItemProps) => (size === 'minium' ? '100%' : '315px')};
   }
-  @media (max-width: 1200px) {
-    width: ${({ size }: ItemProps) => (size === 'minium' ? '100%' : '296px')};
+  @media (max-width: ${breakpoints.tablet}) {
+    width: ${({ size }: ItemProps) => (size === 'minium' ? '100%' : '176px')};
   }
-  @media (max-width: 1138px) {
-    width: ${({ size }: ItemProps) => (size === 'minium' ? '100%' : '290px')};
+  @media (max-width: ${breakpoints.mobile}) {
+    width: ${({ size }: ItemProps) => (size === 'minium' ? '100%' : '430px')};
   }
-  @media (max-width: 980px) {
-    width: ${({ size }: ItemProps) => (size === 'minium' ? '100%' : '216px')};
+  @media (max-width: 450px) {
+    width: ${({ size }: ItemProps) => (size === 'minium' ? '100%' : '375px')};
   }
 `;
 export const Name = styled.div`
@@ -62,6 +62,10 @@ export const Img = styled.img`
   height: ${({ size }: ItemProps) => (size === 'minium' ? '140px' : '')};
   @media (max-width: ${breakpoints.desktop}) {
     width: ${({ size }: ItemProps) => (size === 'minium' ? '100%' : '')};
+    height: ${({ size }: ItemProps) => (size === 'minium' ? 'auto' : '')};
+  }
+  @media (max-width: ${breakpoints.desktop}) {
+    height: ${({ size }: ItemProps) => (size === 'minium' ? 'auto' : '')};
   }
 `;
 

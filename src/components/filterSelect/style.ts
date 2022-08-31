@@ -1,3 +1,4 @@
+import { breakpoints } from 'styles/breakpoints';
 import { buttonColor } from 'styles/theme/index';
 import { textColor, backgroundMenuSubColor } from 'styles/themeProvider';
 import styled from 'styled-components';
@@ -12,9 +13,14 @@ export const Form = styled.form`
   color: ${secondaryTextColor};
   box-sizing: border-box;
   width: auto;
-  @media (max-width: 1200px) {
+  @media (max-width: ${breakpoints.desktop}) {
     justify-content: center;
     text-align: center;
+    width: auto;
+    gap: 20px;
+  }
+  @media (max-width: 450px) {
+    display: none;
   }
 `;
 
@@ -23,6 +29,9 @@ export const Label = styled.label`
   align-items: center;
   justify-content: center;
   gap: 5px;
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+  }
 `;
 
 export const Select = styled.select`

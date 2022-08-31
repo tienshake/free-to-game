@@ -1,5 +1,3 @@
-import theme from 'styled-theming';
-import { CONSTANTS } from 'constants/constants.d';
 import {
   secondaryColor,
   hoverColorWhite,
@@ -12,6 +10,8 @@ import {
   black_1,
   secondaryTextColor,
 } from 'styles/theme';
+import { CONSTANTS } from 'constants/constants';
+import theme from 'styled-theming';
 
 export const backgroundColor = theme(CONSTANTS.THEME, {
   light: `${whiteColor}`,

@@ -25,10 +25,18 @@ export const GameSlice = createSlice({
       state.gamesPopularity = action.payload;
       state.loading = false;
     },
+    getGameFilter: (state: Games, action: PayloadAction<Game[]>) => {
+      state.gamesFilter = action.payload;
+      state.loading = false;
+    },
   },
 });
 
-export const { getGameRelevance, getGameRelease, getGamePopularity } =
-  GameSlice.actions;
+export const {
+  getGameRelevance,
+  getGameRelease,
+  getGamePopularity,
+  getGameFilter,
+} = GameSlice.actions;
 
 export default GameSlice.reducer;

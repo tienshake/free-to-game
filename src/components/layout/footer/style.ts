@@ -18,21 +18,18 @@ export const FooterContent = styled.div`
   margin: auto;
   gap: 30px;
   padding: 50px 0;
-  @media (min-width: 980px) {
-    width: auto;
-  }
-  @media (max-width: 1160px) {
-    width: auto;
-  }
   @media (max-width: ${breakpoints.desktop}) {
     width: auto;
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
   }
 `;
 
 export const ListItem = styled.div`
   list-style: none;
   width: 250px;
-  @media (max-width: 1160px) {
+  @media (max-width: ${breakpoints.desktop}) {
     width: auto;
   }
 `;

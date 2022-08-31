@@ -1,37 +1,36 @@
 import React from 'react';
 import {
-  HeaderContainer,
-  HeaderContent,
   Img,
   Left,
-  Li,
-  LiItem,
-  Right,
-  Dropdown,
   Item,
-  MenuSub,
-  BoxSub,
-  IconMenu,
-  LinkStyled,
+  Right,
   Action,
+  BoxSub,
+  LiItem,
+  MenuSub,
+  IconMenu,
+  Dropdown,
+  LinkStyled,
+  HeaderContent,
+  HeaderContainer,
   SearchIconStyled,
 } from './style';
 import {
-  GENRES_ALL,
-  GENRES_BROWSER,
+  EN,
   BROWSER,
   IMG_LOGO,
-  EN,
-} from 'constants/constants.d';
+  GENRES_ALL,
+  GENRES_BROWSER,
+} from 'constants/constants';
 import { Box } from '@mui/system';
-import { useSelector } from 'react-redux';
 import { RootState } from 'store/store';
 import { translate } from 'util/translate';
 import { IconButton } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { headers, headerType } from './type';
+import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { setIsSearchRedux } from 'features/actionHeader';
+import { setIsSearchRedux } from 'features/actionHeaderSlice';
+import { headers, headerType } from './type';
 import { GENRES_ARR, GENRES_BROWSER_ARR, typeListGame } from 'constants/games';
 import LightOfDark from 'components/lightOfDark';
 import SelectLanguage from 'components/selectLanguage';
@@ -82,16 +81,18 @@ const Header = () => {
     dispatch(setIsSearchRedux(!isSearch));
   };
 
+  const handleClickLogo = () => {
+    window.scrollTo(0, 0);
+  };
+
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
   return (
     <HeaderContainer>
       <HeaderContent>
         <Left>
-          <LinkStyled to="/">
-            <Li>
-              <Img src={IMG_LOGO} />
-            </Li>
+          <LinkStyled onClick={handleClickLogo} to="/">
+            <Img src={IMG_LOGO} />
           </LinkStyled>
           {headers?.map((item: headerType, index: number) => {
             const Icon = item.icon;

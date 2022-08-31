@@ -1,20 +1,20 @@
 import React from 'react';
-import { ContentGame, ContentLeft, ContentRight, Container } from './style';
-import { useSelector } from 'react-redux';
+import { Link } from 'styles/components/style';
 import { translate } from 'util/translate';
 import { RootState } from 'store/store';
-import { ButtonOutline } from 'components/button';
+import { useSelector } from 'react-redux';
 import { useAppDispatch } from 'hook/hooksStore';
-import { Link } from 'styles/components/style';
-import ListGame from 'components/listGame';
-import SmartToyIcon from '@mui/icons-material/SmartToy';
-import HelpIcon from '@mui/icons-material/Help';
-import HeaderTitle from 'components/headerTitle';
-import CardGame from 'components/cardGame';
-import CardGameMini from 'components/cardGameMini';
-import dispatchDataRedux from 'util/dispatchDataRedux';
-import Community from 'components/community';
+import { ButtonOutline } from 'components/button';
+import { ContentGame, ContentLeft, ContentRight, Container } from './style';
 import Loading from 'components/loading';
+import ListGame from 'components/listGame';
+import HelpIcon from '@mui/icons-material/Help';
+import CardGame from 'components/cardGame';
+import Community from 'components/community';
+import HeaderTitle from 'components/headerTitle';
+import CardGameMini from 'components/cardGameMini';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+import dispatchDataRedux from 'util/dispatchDataRedux';
 import _ from 'lodash';
 
 const Home = () => {
@@ -44,7 +44,7 @@ const Home = () => {
         IconTop={SmartToyIcon}
         IconBottom={HelpIcon}
       />
-      {gamesRelevance.length === 0 && <Loading />}
+      {_.isEmpty(gamesRelevance) && <Loading />}
       {/* ListGame render */}
       <ListGame items={gamesRelevance} limit={3} Card={CardGame} />
       {/* body */}

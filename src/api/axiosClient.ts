@@ -1,4 +1,4 @@
-import { API_HOST, API_KEY, STATUS_SUCCESS } from 'constants/constants.d';
+import { API_HOST, API_KEY, STATUS_SUCCESS } from 'constants/constants';
 import axios from 'axios';
 import queryString from 'query-string';
 
@@ -18,9 +18,9 @@ axiosClient.interceptors.response.use(
   (response) => {
     if (response && response.status === STATUS_SUCCESS) {
       return response.data;
+    } else {
+      return {};
     }
-
-    return response;
   },
   (error) => {
     throw error;

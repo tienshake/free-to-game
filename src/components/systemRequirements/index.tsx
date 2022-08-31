@@ -1,5 +1,5 @@
 import { IconSa, IconWin } from 'components/cardGameMini/style';
-import { PC_BROWSER, WEB_BROWSER } from 'constants/constants.d';
+import { PC_BROWSER, WEB_BROWSER } from 'constants/constants';
 import { GameDetails } from 'types';
 import { Container, Item } from './style';
 import { useSelector } from 'react-redux';

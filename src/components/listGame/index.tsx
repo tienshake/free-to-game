@@ -1,6 +1,6 @@
 import React from 'react';
 import { ItemProps } from 'components/cardGame';
-import { Container, Link } from 'styles/components/style';
+import { Link } from 'styles/components/style';
 import { ListContentGame } from './style';
 import { Game } from 'types';
 
@@ -26,17 +26,15 @@ const ListGame = (props: ItemsProps) => {
   }, [limit, items]);
 
   return (
-    <Container>
-      <ListContentGame column={column} limit={limit}>
-        {listArr?.map((item, i: number) => {
-          return (
-            <Link to={`/game?id=${item.id}`} key={i}>
-              <Card item={item} disableName={disableName} />
-            </Link>
-          );
-        })}
-      </ListContentGame>
-    </Container>
+    <ListContentGame column={column} limit={limit}>
+      {listArr?.map((item, i: number) => {
+        return (
+          <Link to={`/game?id=${item.id}`} key={i}>
+            <Card item={item} disableName={disableName} />
+          </Link>
+        );
+      })}
+    </ListContentGame>
   );
 };
 

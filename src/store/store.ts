@@ -1,6 +1,6 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import reduxReducer from 'features/language/LanguageSlice';
-import LightOfDarkReducer from 'features/actionHeader';
+import LightOfDarkReducer from 'features/actionHeaderSlice';
 import gamesReducer from 'features/games/GameSlice';
 
 export const store = configureStore({

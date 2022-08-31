@@ -1,3 +1,4 @@
+import { breakpoints } from 'styles/breakpoints';
 import styled from 'styled-components';
 
 type styleProps = {
@@ -11,7 +12,7 @@ export const ListContentGame = styled.div`
   justify-content: flex-start;
   flex-direction: ${({ column }: styleProps) => (column ? 'column' : 'row')};
   flex-wrap: wrap;
-  @media (max-width: 1200px) {
+  @media (max-width: ${breakpoints.desktop}) {
     justify-content: center;
   }
 `;

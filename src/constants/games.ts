@@ -4,7 +4,7 @@ export type typeListGame = {
   displayVi?: string;
 };
 
-export const PLATFORMS: typeListGame[] = [
+export const PLATFORMS = [
   {
     value: 'browser',
     display: 'Browser (Web)',
@@ -15,7 +15,7 @@ export const PLATFORMS: typeListGame[] = [
   },
 ];
 
-export const GENRES_ARR: typeListGame[] = [
+export const GENRES_ARR = [
   {
     value: 'mmo',
     displayVi: 'Game Online',
@@ -63,7 +63,7 @@ export const GENRES_ARR: typeListGame[] = [
   },
 ];
 
-export const GENRES_BROWSER_ARR: typeListGame[] = [
+export const GENRES_BROWSER_ARR = [
   {
     value: 'mmorpg',
     display: 'MMORPG',
@@ -96,7 +96,7 @@ export const GENRES_BROWSER_ARR: typeListGame[] = [
   },
 ];
 
-export const TAGS: typeListGame[] = [
+export const TAGS = [
   {
     value: 'mmofps',
     display: 'MMOFPS',
@@ -147,7 +147,7 @@ export const TAGS: typeListGame[] = [
   },
 ];
 
-export const SORT_BY: typeListGame[] = [
+export const SORT_BY = [
   {
     value: 'relevance',
     display: 'Relevance',

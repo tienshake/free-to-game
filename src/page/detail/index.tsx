@@ -1,36 +1,36 @@
+import React from 'react';
 import {
-  BackGroundImgStyled,
-  DetailContainer,
-  ActionStyled,
-  Breadcrumbs,
   H4,
   Text,
-  HeaderTitleStyled,
-  InformationTitle,
-  Screenshots,
   ReadMore,
+  Breadcrumbs,
+  Screenshots,
+  ActionStyled,
+  DetailContainer,
+  InformationTitle,
+  HeaderTitleStyled,
+  BackGroundImgStyled,
 } from './style';
-import { ButtonPrimary } from 'components/button';
-import { useLocation } from 'react-router-dom';
+import { ID } from 'constants/constants';
 import { Link } from 'styles/components/style';
-import { Typography } from '@mui/material';
-import { RootState } from 'store/store';
-import { useSelector } from 'react-redux';
 import { translate } from 'util/translate';
+import { RootState } from 'store/store';
+import { Typography } from '@mui/material';
 import { GameDetails } from 'types';
-import { ID } from 'constants/constants.d';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import GroupBtnState from 'components/groupBtnState';
+import { useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom';
+import { ButtonPrimary } from 'components/button';
 import Comment from 'components/comment';
-import ErrorIcon from '@mui/icons-material/Error';
-import Information from 'components/information';
-import SystemRequirements from 'components/systemRequirements';
-import React from 'react';
-import requestApi from 'api/requestApi';
 import Reviews from 'components/reviews';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import _ from 'lodash';
 import Loading from 'components/loading';
+import ErrorIcon from '@mui/icons-material/Error';
+import requestApi from 'api/requestApi';
+import Information from 'components/information';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import GroupBtnState from 'components/groupBtnState';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import SystemRequirements from 'components/systemRequirements';
+import _ from 'lodash';
 
 const Detail = () => {
   const { search } = useLocation();
@@ -59,7 +59,7 @@ const Detail = () => {
           background: `url(https://www.freetogame.com/g/${game?.id}/background.jpg)`,
         }}
       >
-        <div className="detail-gradient"></div>
+        <div className="detail-gradient" />
       </BackGroundImgStyled>
       <div className="detail-left">
         {/* Card */}
@@ -113,6 +113,7 @@ const Detail = () => {
             <>{translate('read-less', language)}</>
           )}
         </ReadMore>
+        {/* Information */}
         <InformationTitle>
           <HeaderTitleStyled
             topTile={translate('additional-information', language)}
@@ -120,7 +121,6 @@ const Detail = () => {
             IconBottom={ErrorIcon}
           />
         </InformationTitle>
-        {/* Information */}
         <Information item={game} />
         <H4>
           {game?.title} {translate('screenshots', language)}

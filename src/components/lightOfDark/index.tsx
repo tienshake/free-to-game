@@ -2,7 +2,7 @@ import Brightness5Icon from '@mui/icons-material/Brightness5';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { RootState } from 'store/store';
 import { useSelector, useDispatch } from 'react-redux';
-import { setIsLightRedux } from 'features/actionHeader';
+import { setIsLightRedux } from 'features/actionHeaderSlice';
 
 const LightOfDark = () => {
   const { isLight } = useSelector((state: RootState) => state.actionHeader);
@@ -11,7 +11,7 @@ const LightOfDark = () => {
     dispatch(setIsLightRedux(!isLight));
   };
   return (
-    <div style={{ cursor: 'pointer' }}>
+    <div style={{ cursor: 'pointer' }} className="lightOfDark">
       {isLight ? (
         <Brightness5Icon onClick={handleOnClick} />
       ) : (

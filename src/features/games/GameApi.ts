@@ -5,6 +5,7 @@ import {
   getGameRelease,
   getGameRelevance,
   getGamePopularity,
+  getGameFilter,
 } from './GameSlice';
 
 const dispatchGameRelease = async (
@@ -28,4 +29,16 @@ const dispatchGamePopularity = (
   dispatch(getGamePopularity(data));
 };
 
-export { dispatchGameRelease, dispatchGameRelevance, dispatchGamePopularity };
+const dispatchGameFilter = (
+  dispatch: React.Dispatch<PayloadAction<Game[]>>,
+  data: Game[],
+) => {
+  dispatch(getGameFilter(data));
+};
+
+export {
+  dispatchGameRelease,
+  dispatchGameRelevance,
+  dispatchGamePopularity,
+  dispatchGameFilter,
+};

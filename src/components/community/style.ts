@@ -1,3 +1,4 @@
+import { breakpoints } from 'styles/breakpoints';
 import { CommunityItemColor } from 'styles/themeProvider/index';
 import { secondaryTextColor } from 'styles/theme/index';
 import styled from 'styled-components';
@@ -6,6 +7,9 @@ export const CommunityStyled = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+  }
 `;
 
 export const CommunityItem = styled.div`
@@ -16,6 +20,11 @@ export const CommunityItem = styled.div`
   min-height: 200px;
   width: 50%;
   border-radius: 5px;
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const CommunityDes = styled.div`

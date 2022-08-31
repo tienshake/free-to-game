@@ -1,13 +1,14 @@
-import { breakpoints } from 'styles/breakpoints';
-import { Container as ContainerStyle } from 'styles/components/style';
-import { textColor } from 'styles/themeProvider';
 import styled from 'styled-components';
 import { width } from 'styles/theme';
-import { TextField as TextFieldStyle } from '@mui/material';
+import { textColor } from 'styles/themeProvider';
+import { breakpoints } from 'styles/breakpoints';
 import { SearchIconStyled } from 'components/layout/header/style';
+import { Container as ContainerStyle } from 'styles/components/style';
+import { TextField as TextFieldStyle } from '@mui/material';
 
 export const Container = styled(ContainerStyle)`
   width: ${width};
+  min-height: 100vh;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -15,17 +16,13 @@ export const Container = styled(ContainerStyle)`
     width: auto;
     padding: 0 20px;
   }
-  @media (max-width: 1200px) {
+  @media (max-width: ${breakpoints.tablet}) {
     width: auto;
-    padding: 0 20px;
-  }
-  @media (max-width: 980px) {
     padding: 0 110px;
-    width: auto;
   }
-  @media (max-width: 918px) {
-    padding: 0 20px;
+  @media (max-width: ${breakpoints.mobile}) {
     width: auto;
+    padding: 0 20px;
   }
 `;
 
@@ -63,6 +60,14 @@ export const SearchStyled = styled.div`
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+    @media (max-width: ${breakpoints.desktop}) {
+      width: auto;
+      padding: 0 20px;
+    }
+    @media (max-width: ${breakpoints.tablet}) {
+      align-items: center;
+      justify-content: center;
+    }
   }
 `;
 

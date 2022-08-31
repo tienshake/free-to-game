@@ -10,7 +10,7 @@ import {
   CardGameMiniViewGamesStyled,
   IconSa,
 } from './style';
-import { CONSTANTS, PC_BROWSER, WEB_BROWSER } from 'constants/constants.d';
+import { CONSTANTS, PC_BROWSER, WEB_BROWSER } from 'constants/constants';
 import { RootState } from 'store/store';
 import { translate } from 'util/translate';
 import { useSelector } from 'react-redux';

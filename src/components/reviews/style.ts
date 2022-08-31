@@ -6,6 +6,9 @@ export const ReviewsStyle = styled.div`
   display: flex;
   margin-top: 30px;
   justify-content: space-between;
+  @media (max-width: 450px) {
+    overflow: hidden;
+  }
   .detail-reviews-left {
     display: flex;
     flex-direction: column;
@@ -20,6 +23,9 @@ export const ReviewsStyle = styled.div`
   }
   .detail-reviews-right {
     padding-right: 100px;
+    @media (max-width: 450px) {
+      padding: 0;
+    }
   }
 `;
 export const PersonIcon = styled(Person)``;

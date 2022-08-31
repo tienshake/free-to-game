@@ -5,7 +5,7 @@ import { ReactComponent as IconVi } from 'assets/icons/IconVi.svg';
 import { ReactComponent as IconEn } from 'assets/icons/IconEn.svg';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeLanguage } from 'features/language/LanguageSlice';
-import { EN, VI } from 'constants/constants.d';
+import { EN, VI } from 'constants/constants';
 
 const SelectLanguage = () => {
   const { language } = useSelector((state: RootState) => state.lang);

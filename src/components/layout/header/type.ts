@@ -1,5 +1,5 @@
 import { IconDropDown } from './style';
-import { GENRES_ALL, GENRES_BROWSER } from 'constants/constants.d';
+import { GENRES_ALL, GENRES_BROWSER } from 'constants/constants';
 export type headerType = {
   title: string;
   icon?: any;

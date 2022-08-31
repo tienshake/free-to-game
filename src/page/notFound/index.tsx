@@ -1,6 +1,6 @@
-import { useSelector } from 'react-redux';
 import { RootState } from 'store/store';
 import { translate } from 'util/translate';
+import { useSelector } from 'react-redux';
 import { NotFoundContainer } from './style';
 
 const NotFound = () => {

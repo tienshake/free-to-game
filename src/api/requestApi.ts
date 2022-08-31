@@ -1,6 +1,6 @@
 import axiosClient from './axiosClient';
+import { PATCH } from 'constants/constants';
 import _ from 'lodash';
-import { PATCH } from 'constants/constants.d';
 
 const requestApi = {
   getGame: async (id: string | null) => {
