@@ -1,4 +1,6 @@
-# Link demo: [https://tienshake.github.io/free-to-game/](https://tienshake.github.io/free-to-game/)
+# Live demo: 
+
+[https://tienshake.github.io/free-to-game/](https://tienshake.github.io/free-to-game/)
 
 # Getting Started with Create React App
 
